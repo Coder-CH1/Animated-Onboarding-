@@ -1,5 +1,5 @@
 //
-//  OnboardingViewController.swift
+//  OnboardingVCThree.swift
 //  Animated Onboarding
 //
 //  Created by Mac on 02/12/2024.
@@ -7,11 +7,11 @@
 
 import UIKit
 
-class OnboardingViewController: UIViewController {
+class OnboardingVCThree: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
-
+    
 }

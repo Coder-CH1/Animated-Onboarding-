@@ -26,11 +26,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let navVC = UINavigationController(rootViewController: firstVC)
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
             navVC.pushViewController(secondVC, animated: true)
         }
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
             navVC.pushViewController(thirdVC, animated: true)
         }
         

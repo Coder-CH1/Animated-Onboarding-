@@ -15,7 +15,7 @@
 		047BB0392D33BE54002B9122 /* OnboardingVCOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047BB0382D33BE54002B9122 /* OnboardingVCOne.swift */; };
 		047BB03B2D33BE6A002B9122 /* OnboardingVCTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047BB03A2D33BE6A002B9122 /* OnboardingVCTwo.swift */; };
 		047BB03D2D33BE83002B9122 /* OnboardingVCThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047BB03C2D33BE83002B9122 /* OnboardingVCThree.swift */; };
-		047BB0442D33CE57002B9122 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047BB0432D33CE57002B9122 /* Constant.swift */; };
+		047BB0442D33CE57002B9122 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047BB0432D33CE57002B9122 /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +29,7 @@
 		047BB0382D33BE54002B9122 /* OnboardingVCOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVCOne.swift; sourceTree = "<group>"; };
 		047BB03A2D33BE6A002B9122 /* OnboardingVCTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVCTwo.swift; sourceTree = "<group>"; };
 		047BB03C2D33BE83002B9122 /* OnboardingVCThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVCThree.swift; sourceTree = "<group>"; };
-		047BB0432D33CE57002B9122 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		047BB0432D33CE57002B9122 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +62,7 @@
 		047BB0212D319FB1002B9122 /* Animated Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				047BB0422D33CE3C002B9122 /* Constant */,
+				047BB0422D33CE3C002B9122 /* Extension */,
 				047BB0412D33CE29002B9122 /* Delegates */,
 				047BB0402D33CE1B002B9122 /* Controllers */,
 				047BB02B2D319FB2002B9122 /* Assets.xcassets */,
@@ -92,12 +92,12 @@
 			path = Delegates;
 			sourceTree = "<group>";
 		};
-		047BB0422D33CE3C002B9122 /* Constant */ = {
+		047BB0422D33CE3C002B9122 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				047BB0432D33CE57002B9122 /* Constant.swift */,
+				047BB0432D33CE57002B9122 /* Extension.swift */,
 			);
-			path = Constant;
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,7 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				047BB0442D33CE57002B9122 /* Constant.swift in Sources */,
+				047BB0442D33CE57002B9122 /* Extension.swift in Sources */,
 				047BB0272D319FB1002B9122 /* ViewController.swift in Sources */,
 				047BB0232D319FB1002B9122 /* AppDelegate.swift in Sources */,
 				047BB03D2D33BE83002B9122 /* OnboardingVCThree.swift in Sources */,

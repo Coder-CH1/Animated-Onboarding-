@@ -14,17 +14,10 @@ class OnboardingVCOne: UIViewController {
     // MARK: - Lifecycle -
     override func viewDidLoad() {
         super.viewDidLoad()
-        customizeButton()
-    }
-    
-    // MARK: - Object properties and values -
-    func customizeButton() {
-        button.setTitle("Tap", for: .normal)
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitleColor(.white, for: .normal)
+        self.view.customizeButton(button)
         setSubviewsAndLayout()
-    }
-    
+    }    
+
     // MARK: - Subviews and Layout -
     func setSubviewsAndLayout() {
         view.addSubview(button)

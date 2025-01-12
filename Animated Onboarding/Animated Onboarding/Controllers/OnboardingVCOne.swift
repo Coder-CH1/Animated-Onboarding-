@@ -10,7 +10,6 @@ import UIKit
 class OnboardingVCOne: UIViewController {
     // MARK: - Object -
     fileprivate var button = UIButton()
-    let pageControl = UIPageControl()
     
     // MARK: - Lifecycle -
     override func viewDidLoad() {
@@ -21,7 +20,6 @@ class OnboardingVCOne: UIViewController {
     // MARK: - Set up UI -
     func setupUI() {
         self.view.customizeButton(button, title: "Onboarding One")
-        configurePageControl(pageControl: pageControl, numberOfPages: 3, currentPage: 0)
         setSubviewsAndLayout()
     }
     

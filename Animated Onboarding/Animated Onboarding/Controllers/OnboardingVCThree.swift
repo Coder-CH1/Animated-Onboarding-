@@ -11,7 +11,6 @@ class OnboardingVCThree: UIViewController {
     
     // MARK: - Object -
     fileprivate var button = UIButton()
-    let pageControl = UIPageControl()
     
     // MARK: - Lifecycle -
     override func viewDidLoad() {
@@ -22,7 +21,6 @@ class OnboardingVCThree: UIViewController {
     // MARK: - Set up UI -
     func setupUI() {
         self.view.customizeButton(button, title: "Onboarding Three")
-        configurePageControl(pageControl: pageControl, numberOfPages: 3, currentPage: 0)
         setSubviewsAndLayout()
     }
     

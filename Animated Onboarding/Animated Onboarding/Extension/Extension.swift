@@ -25,25 +25,4 @@ extension UIViewController {
         pageControl.frame = CGRect(x: 0, y: view.frame.size.height - 100, width: view.frame.size.width, height: 50)
         view.addSubview(pageControl)
     }
-    
-    //MARK: - This action when tapped shows each page control.
-    func pageControlSelectedAction(pageControl: UIPageControl) {
-        let action = UIAction { [weak self] _ in
-            self?.pageControlTapped(pageControl)
-        }
-        pageControl.addAction(action, for: .primaryActionTriggered)
-    }
-        
-    func pageControlTapped(_ sender: UIPageControl) {
-        let currentPage = sender.currentPage
-        let xOffset = view.bounds.width * CGFloat(currentPage)
-        
-        if let scrollView = self.view.subviews.first(where: { $0 is UIScrollView}) as? UIScrollView {
-            scrollView.setContentOffset(CGPoint(x: xOffset, y: 0), animated: true)
-        } else if let navigationController = self.navigationController {
-            let vc = navigationController.viewControllers
-            let newVC = vc[currentPage]
-            navigationController.popToViewController(newVC, animated: true)
-        }
-    }
 }

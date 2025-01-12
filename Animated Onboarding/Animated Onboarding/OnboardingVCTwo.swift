@@ -12,6 +12,5 @@ class OnboardingVCTwo: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-    }
-    
+    }    
 }

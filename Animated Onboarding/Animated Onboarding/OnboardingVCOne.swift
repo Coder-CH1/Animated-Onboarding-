@@ -13,5 +13,4 @@ class OnboardingVCOne: UIViewController {
         super.viewDidLoad()
         
     }
-    
 }

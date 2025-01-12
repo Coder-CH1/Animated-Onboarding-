@@ -13,5 +13,4 @@ class OnboardingVCThree: UIViewController {
         super.viewDidLoad()
 
     }
-    
 }

@@ -15,7 +15,7 @@ class OnboardingVCTwo: UIViewController {
     // MARK: - Lifecycle -
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.customizeButton(button, title: "Continue")
+        self.view.customizeButton(button, title: "Onboarding Two")
         setSubviewsAndLayout()
     }
     

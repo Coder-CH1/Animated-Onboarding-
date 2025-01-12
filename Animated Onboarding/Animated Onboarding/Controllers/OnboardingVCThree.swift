@@ -14,7 +14,7 @@ class OnboardingVCThree: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.customizeButton(button, title: "Back")
+        self.view.customizeButton(button, title: "Onboarding Three")
         setSubviewsAndLayout()
     }
     

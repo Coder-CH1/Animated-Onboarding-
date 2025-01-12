@@ -6,9 +6,9 @@
 //
 
 import UIKit
-
+// MARK: - Extension -
 extension UIView {
-    // MARK: - Object properties and values -
+    // MARK: - Function for customizing object properties and values -
     func customizeButton(_ button: UIButton, title: String) {
         button.setTitle(title, for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false

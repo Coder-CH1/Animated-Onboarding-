@@ -25,5 +25,11 @@ class OnboardingVCOne: UIViewController {
             button.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -50),
             button.centerXAnchor.constraint(equalTo: view.centerXAnchor),
         ])
+        button.addTarget(self, action: #selector(btnButtonTapped), for: .touchUpInside)
+    }
+    
+    @objc func btnButtonTapped() {
+        let vc = OnboardingVCTwo()
+        navigationController?.pushViewController(vc, animated: false)
     }
 }

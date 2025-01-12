@@ -15,3 +15,14 @@ extension UIView {
         button.setTitleColor(.white, for: .normal)
     }    
 }
+
+extension UIViewController {
+    func configurePageControl(pageControl: UIPageControl, numberOfPages: Int, currentPage: Int) {
+        pageControl.numberOfPages = numberOfPages
+        pageControl.currentPage = currentPage
+        pageControl.currentPageIndicatorTintColor = .black
+        pageControl.pageIndicatorTintColor = .yellow
+        pageControl.frame = CGRect(x: 0, y: view.frame.size.height - 100, width: view.frame.size.width, height: 50)
+        view.addSubview(pageControl)
+    }
+}

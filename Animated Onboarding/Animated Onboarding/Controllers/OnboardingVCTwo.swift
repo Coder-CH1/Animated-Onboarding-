@@ -12,6 +12,8 @@ class OnboardingVCTwo: UIViewController {
     // MARK: - Object -
     fileprivate var button = UIButton()
     
+    let pageControl = UIPageControl()
+    
     // MARK: - Lifecycle -
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +23,7 @@ class OnboardingVCTwo: UIViewController {
     // MARK: - Set up UI -
     func setupUI() {
         self.view.customizeButton(button, title: "Onboarding Two")
+        configurePageControl(pageControl: pageControl, numberOfPages: 3, currentPage: 1)
         setSubviewsAndLayout()
     }
     

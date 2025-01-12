@@ -9,7 +9,6 @@ import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
-    let pageControl = UIPageControl()
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
@@ -30,12 +29,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
             navVC.pushViewController(secondVC, animated: true)
-            self.pageControl.currentPage = 1
         }
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 8) {
             navVC.pushViewController(thirdVC, animated: true)
-            self.pageControl.currentPage = 2
         }
         
         window?.rootViewController = navVC

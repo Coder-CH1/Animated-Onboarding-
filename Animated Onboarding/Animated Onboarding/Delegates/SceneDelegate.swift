@@ -26,6 +26,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let navVC = UINavigationController(rootViewController: firstVC)
         
+        navVC.viewControllers.forEach { vc in
+            vc.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        }
+        
+        navVC.navigationBar.tintColor = .white
+        navVC.navigationBar.barTintColor = .white
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
             navVC.pushViewController(secondVC, animated: true)

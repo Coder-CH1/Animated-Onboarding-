@@ -14,8 +14,22 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window = UIWindow(windowScene: windowScene)
         window?.backgroundColor = .white
-        let rootViewController = ViewController()
-        window?.rootViewController = rootViewController
+        
+        let firstVC = OnboardingVCOne()
+        firstVC.view.backgroundColor = .red
+        
+        let secondVC = OnboardingVCTwo()
+        secondVC.view.backgroundColor = .brown
+        
+        let thirdVC = OnboardingVCThree()
+        thirdVC.view.backgroundColor = .systemPink
+        
+        let navVC = UINavigationController(rootViewController: firstVC)
+        
+        navVC.pushViewController(secondVC, animated: true)
+        navVC.pushViewController(thirdVC, animated: true)
+
+        window?.rootViewController = navVC
         window?.makeKeyAndVisible()
     }
 

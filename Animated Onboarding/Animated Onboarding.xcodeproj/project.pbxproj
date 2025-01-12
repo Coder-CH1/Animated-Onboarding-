@@ -12,6 +12,7 @@
 		047BB0272D319FB1002B9122 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047BB0262D319FB1002B9122 /* ViewController.swift */; };
 		047BB02C2D319FB2002B9122 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 047BB02B2D319FB2002B9122 /* Assets.xcassets */; };
 		047BB02F2D319FB2002B9122 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047BB02D2D319FB2002B9122 /* LaunchScreen.storyboard */; };
+		047BB0372D33B530002B9122 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047BB0362D33B530002B9122 /* OnboardingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		047BB02B2D319FB2002B9122 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		047BB02E2D319FB2002B9122 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		047BB0302D319FB2002B9122 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		047BB0362D33B530002B9122 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				047BB0222D319FB1002B9122 /* AppDelegate.swift */,
 				047BB0242D319FB1002B9122 /* SceneDelegate.swift */,
 				047BB0262D319FB1002B9122 /* ViewController.swift */,
+				047BB0362D33B530002B9122 /* OnboardingViewController.swift */,
 				047BB02B2D319FB2002B9122 /* Assets.xcassets */,
 				047BB02D2D319FB2002B9122 /* LaunchScreen.storyboard */,
 				047BB0302D319FB2002B9122 /* Info.plist */,
@@ -137,6 +140,7 @@
 				047BB0272D319FB1002B9122 /* ViewController.swift in Sources */,
 				047BB0232D319FB1002B9122 /* AppDelegate.swift in Sources */,
 				047BB0252D319FB1002B9122 /* SceneDelegate.swift in Sources */,
+				047BB0372D33B530002B9122 /* OnboardingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

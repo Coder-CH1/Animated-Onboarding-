@@ -25,9 +25,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         thirdVC.view.backgroundColor = .systemPink
         
         let navVC = UINavigationController(rootViewController: firstVC)
-        
-        navVC.pushViewController(secondVC, animated: true)
-        navVC.pushViewController(thirdVC, animated: true)
 
         window?.rootViewController = navVC
         window?.makeKeyAndVisible()

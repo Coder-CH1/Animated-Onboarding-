@@ -8,7 +8,7 @@
 import UIKit
 
 class OnboardingVCThree: UIViewController {
-
+    
     // MARK: - Object -
     fileprivate var button = UIButton()
     
@@ -25,5 +25,9 @@ class OnboardingVCThree: UIViewController {
             button.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -50),
             button.centerXAnchor.constraint(equalTo: view.centerXAnchor),
         ])
+    }
+    
+    @objc func btnButtonTapped() {
+        navigationController?.popViewController(animated: true)
     }
 }

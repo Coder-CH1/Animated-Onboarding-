@@ -25,23 +25,31 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         thirdVC.view.backgroundColor = .systemPink
         
         let navVC = UINavigationController(rootViewController: firstVC)
-
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            navVC.pushViewController(secondVC, animated: true)
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            navVC.pushViewController(thirdVC, animated: true)
+        }
+        
         window?.rootViewController = navVC
         window?.makeKeyAndVisible()
     }
-
+    
     func sceneDidDisconnect(_ scene: UIScene) {
     }
-
+    
     func sceneDidBecomeActive(_ scene: UIScene) {
     }
-
+    
     func sceneWillResignActive(_ scene: UIScene) {
     }
-
+    
     func sceneWillEnterForeground(_ scene: UIScene) {
     }
-
+    
     func sceneDidEnterBackground(_ scene: UIScene) {
     }
 }

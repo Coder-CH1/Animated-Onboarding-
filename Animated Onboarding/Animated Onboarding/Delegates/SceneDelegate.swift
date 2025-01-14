@@ -33,11 +33,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         navVC.navigationBar.tintColor = .white
         navVC.navigationBar.barTintColor = .white
     
-        DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
             navVC.pushViewController(secondVC, animated: true)
         }
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 8) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 9) {
             navVC.pushViewController(thirdVC, animated: true)
         }
         
